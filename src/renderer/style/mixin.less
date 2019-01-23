@@ -1,0 +1,40 @@
+.rounded(@size) {
+  width: @size;
+  height: @size;
+  border-radius: 50%;
+}
+.wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.inline {
+  display: inline-block;
+}
+.pointer {
+  cursor: pointer;
+}
+.color {
+  color: @primary;
+}
+.hover {
+  cursor: pointer;
+  &:hover {
+    color: @primary;
+  }
+}
+.hoverb {
+  cursor: pointer;
+  &:hover {
+    background-color: @primary;
+    color: @white;
+  }
+}
+.bgimage(@url:'https://dummyimage.com/100x100/FF6600') {
+  background-image: url(@url);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
